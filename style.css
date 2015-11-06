@@ -1,0 +1,107 @@
+body, html {
+    font-family: helvetica;
+    font-weight: 100;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+#sidebar {
+    background: #550000;
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+#sidebar ul li {
+    line-height: 20px;
+    text-indent: 10px;
+}
+
+#sidebar ul li a {
+    border-bottom: 1px solid: #801515;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    font-weight: 100%;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255,255,255,0.2);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#header {
+    height: 100px;
+    left: 165px;
+    position: absolute;
+    width: 100%;
+}
+
+#main {
+    left: 165px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+#home { display: block; }
+
+#homegen {
+    border: 1px solid #550000;
+    height: 80px;
+    width: 150px;
+}
+
+#homegen-title {
+    background-color: #550000;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    padding: 2px;
+    text-align: center;
+}
+
+#homegen-min {
+    margin: 1px 0 8px 1px;
+    width: 35px;
+}
+
+#homegen-min-span, #homegen-max-span {
+    margin: 0px 3px;
+    width: 75px;
+}
+
+#homegen-max {
+    margin: 1px 0 6px 1px;
+    width: 35px;
+}
+
+#games { display: none; }
+
+#numbers { display: none; }
+
+#lists { display: none; }
+
+#drawings { display: none; }
+
+#tools { display: none; }
+
+#stats { display: none; }

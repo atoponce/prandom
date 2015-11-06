@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script type="text/javascript" src="random.js"></script>
-        <style>
-            #menu {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-            #menu li {
-                float: left;
-            }
-            #menu li a:link {
-                display: block;
-                width: 120px;
-                text-align: center;
-                padding: 4px;
-            }
-        </style>
-    </head>
-    <body>
-        <ul id="menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/games.html">Games</a></li>
-            <li><a href="/numbers.html">Numbers</a></li>
-            <li><a href="/lists.html">Lists &amp; More</a></li>
-            <li><a href="/drawings.html">Drawings</a></li>
-            <li><a href="/tools.html">Web Tools</a></li>
-            <li><a href="/stats.html">Statistics</a></li>
+<!-- vim: set cc=0 tw=0 sw=2 sts=2 ts=8 expandtab autoindent smarttab -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Numbers</a></li>
+          <li><a href="#">Lists &amp; More</a></li>
+          <li><a href="#">Drawings</a></li>
+          <li><a href="#">Web Tools</a></li>
+          <li><a href="#">Statistics</a></li>
         </ul>
-    </body>
+      </div> <!-- sidebar -->
+      <div id="header">
+        <h1>Cryptographically Secure Random Numbers!</h1>
+      </div> <!-- header -->
+      <div id="main">
+        <div id="home">
+          <div id="homegen">
+            <span id="homegen-title">Random Number</span>
+            <span id="homegen-min-span">
+              <label for="homegen-min">Min:</label>
+              <input type="text" name="homegen-min" id="homegen-min" maxlength="3">
+            </span>
+            <span id="homegen-max-span">
+              <label for="homegen-max">Max:</label>
+              <input type="text" name="homegen-max" id="homegen-max" maxlength="3">
+            </span>
+            <span id="homegen-btn-span">
+              <input type="button" value="Generate" name="homegen-btn" id="homegen-btn">
+            </span>
+            <label for="homegen-result">Result:</label>
+            <span id="homegen-result"></span>
+          </div> <!-- homegen -->
+        </div> <!-- home -->
+        <div id="games"> </div> <!-- games -->
+        <div id="numbers"> </div> <!-- numbers -->
+        <div id="lists"> </div> <!-- lists -->
+        <div id="drawings"> </div> <!-- drawings -->
+        <div id="tools"> </div> <!-- tools -->
+        <div id="stats"> </div> <!-- tatss -->
+      </div> <!-- main -->
+    </div> <!-- container -->
+  </body>
 </html>
+<!-- vim: set cc=0 tw=0 sw=2 sts=2 ts=8 expandtab autoindent smarttab -->
